@@ -3249,8 +3249,8 @@ objects:
               - mountPath: /home/wso2carbon/wso2-config-volume/conf/worker/deployment.yaml
                 name: wso2am-analytics-worker-conf
                 subPath: deployment.yaml
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command:
               - sh
@@ -3352,8 +3352,8 @@ objects:
               - mountPath: /home/wso2carbon/wso2-config-volume/conf/worker/deployment.yaml
                 name: wso2am-analytics-worker-2-conf
                 subPath: deployment.yaml
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command:
               - sh
@@ -3459,8 +3459,8 @@ objects:
               - mountPath: /home/wso2carbon/docker-entrypoint.sh
                 name: wso2am-am-analytics-dashboard-conf-entrypoint
                 subPath: docker-entrypoint.sh
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command:
               - sh
@@ -3579,8 +3579,8 @@ objects:
           - hostnames:
               - wso2am-km.${OPENSHIFT_BASE_DOMAIN}
             ip: 127.0.0.1
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command:
               - sh
@@ -3708,8 +3708,8 @@ objects:
           - hostnames:
               - wso2am-gw.${OPENSHIFT_BASE_DOMAIN}
             ip: 127.0.0.1
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command:
               - sh
@@ -3843,8 +3843,8 @@ objects:
           - hostnames:
               - wso2am-am.${OPENSHIFT_BASE_DOMAIN}
             ip: 127.0.0.1
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command:
               - sh
@@ -3981,8 +3981,8 @@ objects:
           - hostnames:
               - wso2am-am.${OPENSHIFT_BASE_DOMAIN}
             ip: 127.0.0.1
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command:
               - sh
@@ -4340,22 +4340,22 @@ parameters:
 - name: OPENSHIFT_BASE_DOMAIN
   displayName: OpenShift base domain.
   required: true
-  value: apps.novalocal
+  value: ""
 
 - name: IMAGE_ANALYTICS_WORKER
   displayName: WSO2 Analytics Worker image name.
   required: true
-  value: chathuru/wso2am-analytics-worker:3.1.0-beta
+  value: docker.wso2.com/wso2am-analytics-worker:3.1.0-beta
 
 - name: IMAGE_ANALYTICS_DASHBOARD
   displayName: WSO2 Analytics dashboard image name.
   required: true
-  value: chathuru/wso2am-analytics-dashboard:3.1.0-beta
+  value: docker.wso2.com/wso2am-analytics-dashboard:3.1.0-beta
 
 - name: IMAGE_APIM
   displayName: WSO2 APIM image name.
   required: true
-  value: chathuru/wso2am:3.1.0-beta
+  value: docker.wso2.com/wso2am:3.1.0-beta
 
 - name: IMAGE_PULL_SECRET
   displayName: WSO2 Subscription Credentials
