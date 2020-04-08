@@ -2,7 +2,7 @@
 
 1. An already setup OpenShift cluster
 
-2. Three NFS shares for storage. For a step by step guide on how to install NFS server refer here. [CentOS](https://www.server-world.info/en/note?os=CentOS_7&p=nfs&f=1), [Ubuntu](https://www.server-world.info/en/note?os=Ubuntu_18.04&p=nfs&f=1)
+2. Seven NFS shares for storage. For a step by step guide on how to install NFS server refer here. [CentOS](https://www.server-world.info/en/note?os=CentOS_7&p=nfs&f=1), [Ubuntu](https://www.server-world.info/en/note?os=Ubuntu_18.04&p=nfs&f=1)
 
 ## APIM Server Deployment
 
