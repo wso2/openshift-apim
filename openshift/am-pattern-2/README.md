@@ -29,7 +29,7 @@
 
 4. Access product management consoles. Obtain the (HOST/PORT) of the route resource
 
-	`oc get route -n <NAMESPACE>`
+	`oc get route -n <PROJECT_NAME>`
 	
 Try navigating to `https://<HOST/PORT>/carbon`, `https://<HOST/PORT>/publisher` and `https://<HOST/PORT>/devportal` from your favorite browser.
 
