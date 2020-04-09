@@ -5941,17 +5941,17 @@ parameters:
 - name: IMAGE_ANALYTICS_WORKER
   displayName: WSO2 Analytics Worker image name.
   required: true
-  value: wso2/wso2am-analytics-worker:3.1.0
+  value: docker.wso2.com/wso2am-analytics-worker:3.1.0
 
 - name: IMAGE_ANALYTICS_DASHBOARD
   displayName: WSO2 Analytics dashboard image name.
   required: true
-  value: wso2/wso2am-analytics-dashboard:3.1.0
+  value: docker.wso2.com/wso2am-analytics-dashboard:3.1.0
 
 - name: IMAGE_APIM
   displayName: WSO2 APIM image name.
   required: true
-  value: wso2/wso2am:3.1.0
+  value: docker.wso2.com/wso2am:3.1.0
 
 - name: IMAGE_PULL_SECRET
   displayName: WSO2 Subscription Credentials
@@ -5959,7 +5959,7 @@ parameters:
   value: wso2-image-pull-secret
 
 - name: NFS_SERVER_IP
-  displayName: NFS Server IP
+  displayName: NFS Server IP address
   required: true
   value: ""
 
