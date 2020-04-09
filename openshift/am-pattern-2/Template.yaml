@@ -5541,8 +5541,8 @@ objects:
               - mountPath: /home/wso2carbon/wso2-config-volume/conf/worker/deployment.yaml
                 name: wso2am-analytics-worker-conf
                 subPath: deployment.yaml
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command:
               - sh
@@ -5644,8 +5644,8 @@ objects:
               - mountPath: /home/wso2carbon/wso2-config-volume/conf/worker/deployment.yaml
                 name: wso2am-am-analytics-worker-2-conf
                 subPath: deployment.yaml
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command:
               - sh
@@ -5751,8 +5751,8 @@ objects:
               - mountPath: /home/wso2carbon/docker-entrypoint.sh
                 name: wso2am-am-analytics-dashboard-conf-entrypoint
                 subPath: docker-entrypoint.sh
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command:
               - sh
@@ -5867,12 +5867,8 @@ objects:
               - mountPath: /home/wso2carbon/docker-entrypoint.sh
                 name: wso2am-entrypoint
                 subPath: docker-entrypoint.sh
-        hostAliases:
-          - hostnames:
-              - wso2am-km.${OPENSHIFT_BASE_DOMAIN}
-            ip: 127.0.0.1
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command:
               - sh
@@ -5996,12 +5992,8 @@ objects:
               - mountPath: /home/wso2carbon/docker-entrypoint.sh
                 name: wso2am-entrypoint
                 subPath: docker-entrypoint.sh
-        hostAliases:
-          - hostnames:
-              - wso2am-gw.${OPENSHIFT_BASE_DOMAIN}
-            ip: 127.0.0.1
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command:
               - sh
@@ -6137,8 +6129,8 @@ objects:
                 mountPath: /home/wso2carbon/solr/indexed-data
               - name: wso2am-instance-1-carbon-db
                 mountPath: /home/wso2carbon/solr/database
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command: ['sh', '-c', 'echo -e "Checking for the availability of MySQL Server deployment"; while ! nc -z "wso2am-mysql-db-service" 3306; do sleep 1; printf "-"; done; echo -e "  >> MySQL Server has started";']
             image: 'busybox:1.31'
@@ -6266,8 +6258,8 @@ objects:
                 mountPath: /home/wso2carbon/solr/indexed-data
               - name: wso2am-instance-2-carbon-db
                 mountPath: /home/wso2carbon/solr/database
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command: ['sh', '-c', 'echo -e "Checking for the availability of MySQL Server deployment"; while ! nc -z "wso2am-mysql-db-service" 3306; do sleep 1; printf "-"; done; echo -e "  >> MySQL Server has started";']
             image: 'busybox:1.31'

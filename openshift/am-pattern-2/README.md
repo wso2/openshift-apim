@@ -34,7 +34,7 @@
 Try navigating to `https://<HOST/PORT>/carbon`, `https://<HOST/PORT>/publisher` and `https://<HOST/PORT>/devportal` from your favorite browser.
 
 ## Configuration
-The following tables lists the configurable parameters of the chart and their default values.
+The following tables lists the configurable parameters of the template and their default values.
 | Parameter                                                                   | Description                                                                               | Default Value               |
 |-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|-----------------------------|
 | `OPENSHIFT_PROJECT_NAME`                                                | Name of the OpenShift project                                                           | wso2                          |
