@@ -6,8 +6,8 @@
 
 #### Openshift resources for API Management deployment patterns
 
-* [Deployment Pattern 1](am-pattern-1/README.md)
-* [Deployment Pattern 2](am-pattern-2/README.md)
+* [Deployment Pattern 1](openshift/am-pattern-1/README.md)
+* [Deployment Pattern 2](openshift/am-pattern-2/README.md)
 
 ## Reporting issues
 
