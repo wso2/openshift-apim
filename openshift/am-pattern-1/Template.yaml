@@ -5176,8 +5176,8 @@ objects:
               - mountPath: /home/wso2carbon/wso2-config-volume/conf/worker/deployment.yaml
                 name: wso2am-pattern-1-am-analytics-worker-conf
                 subPath: deployment.yaml
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command:
               - sh
@@ -5279,8 +5279,8 @@ objects:
               - mountPath: /home/wso2carbon/wso2-config-volume/conf/worker/deployment.yaml
                 name: wso2am-pattern-1-am-analytics-worker-2-conf
                 subPath: deployment.yaml
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command:
               - sh
@@ -5386,8 +5386,8 @@ objects:
               - mountPath: /home/wso2carbon/docker-entrypoint.sh
                 name: wso2am-pattern-1-am-analytics-dashboard-conf-entrypoint
                 subPath: docker-entrypoint.sh
-        #imagePullSecrets:
-        #- name: ${IMAGE_PULL_SECRET}
+        imagePullSecrets:
+        - name: ${IMAGE_PULL_SECRET}
         initContainers:
           - command:
               - sh
